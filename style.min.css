@@ -1,0 +1,713 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'GB';
+    src: url(./fonts/Golos-Text_Bold.ttf);
+}
+@font-face {
+    font-family: 'GDB';
+    src: url(./fonts/Golos-Text_DemiBold.ttf);
+}
+@font-face {
+    font-family: 'GR';
+    src: url(./fonts/Golos-Text_Regular.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+}
+
+img{
+    filter: contrast(110%);
+}
+
+h1, h2, h3, h4, h5, a{
+    color: #f0f0f0;
+}
+h3{
+    font-family: 'GB';
+    font-size: 40px;
+}
+h5{
+    font-family: 'GDB';
+    font-size: 16px;
+}
+h6{
+    font-family: 'GR';
+    font-size: 14px;
+    color: #909090;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.box{
+    width: 1170px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 1170px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header h2{
+    font-family: 'GB';
+    font-size: 20px;
+    color: #6fb1fc;
+}
+header nav a{
+    margin: 0 15px;
+    border-bottom: 1px solid transparent;
+}
+header .icons-url{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+header .icons-url p{
+    border-bottom: 1px solid transparent;
+}
+header a{
+    font-family: 'GR';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+header p{
+    margin-left: 8px;
+}
+header nav a:hover{
+    border-bottom: 1px solid #f0f0f0;
+}
+header .icons-url a:hover p{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+.title h2{
+    font-family: 'GB';
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.url-but{
+    display: grid;
+    width: 220px;
+    height: 48px;
+    background: linear-gradient(to right, #0253d6, #4465f7, #6eaffc);
+}
+.url-but svg{
+    fill: #F0F0F0;
+}
+.url-but:hover{
+    background: #f0f0f0;
+}
+.url-but:hover a{
+    background-image: linear-gradient(to right, #0253d6, #4465f7, #6eaffc);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.url-but:hover svg{
+    fill: #0253d6;
+}
+.url-but a, .trailer{
+    font-family: 'GDB';
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.url-but svg, .trailer svg{
+    margin-right: 10px;
+}
+.url-but, .trailer, .bookmark{
+    border-radius: 8px;
+    border: none;
+}
+.trailer{
+    background: linear-gradient(to right, #000e21, #161d27);
+    width: 120px;
+    color: #f0f0f0;
+}
+.bookmark{
+    background: linear-gradient(to right, #040d22, #141d26);
+    width: 50px;
+    display: grid;
+    place-content: center;
+}
+
+
+.welcome-preview{
+    background: url(./img/1.jpg);
+    background-size: cover;
+    padding: 210px 0 70px 0;
+    margin-top: 45px;
+    color: #f0f0f0;
+    border-radius: 8px;
+}
+.welcome-preview .info{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 360px;
+    margin: 20px 0;
+}
+.age h6{
+    outline: 1px solid #3e3d3e;
+    padding: 2px 4px;
+    outline-width: 1px;
+    border-radius: 1px;
+    font-size: 12px;
+}
+.welcome-preview .description{
+    width: 90%;
+}
+.description p{
+    font-family: 'GR';
+    font-size: 16px;
+    color: #dedede;
+}
+.but-row{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+}
+.welcome-preview .but-row{
+    margin-top: 48px;
+}
+
+
+.recommendations{
+    margin-top: 100px;
+}
+.recommendations .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+.recommendations .card img{
+    border-radius: 8px;
+}
+.recommendations h5{
+    margin: 8px 0;
+}
+.recommendations a:hover h5{
+    text-decoration: underline;
+}
+.recommendations a:hover img{
+    box-shadow: 0 0 10px 0 #cecece60;
+}
+
+
+.space{
+    background: url(./img/6.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.space .info{
+    width: 430px;
+    margin-left: 70px;
+}
+.space p{
+    font-family: 'GR';
+    font-size: 16px;
+    color: #dedede;
+    margin: 30px 0 50px 0;
+}
+
+
+.insomnia{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.insomnia .left-side{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+.stamp{
+    display: grid;
+    place-content: center;
+    width: 38%;
+    height: 36px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff532e, #f09719);
+    font-family: 'GB';
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.insomnia .price{
+    margin: 30px 0;
+}
+.insomnia .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    margin: 50px 0 30px 0;
+}
+.insomnia .buttons p{
+    font-family: 'GB';
+    font-size: 14px;
+    color: #f0f0f0;
+}
+.insomnia .buttons label{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.insomnia .gallery{
+    width: 670px;
+}
+.insomnia .gallery img{
+    border-radius: 8px;
+}
+.insomnia .collage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.insomnia .collage img:nth-child(3), .insomnia .collage img:nth-child(4){
+    margin-top: 30px;
+}
+
+#r1:checked ~ #l1, #r2:checked ~ #l2, #r3:checked ~ #l3{
+    border-bottom: 2px solid #6fb1fc;
+}
+
+
+.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 100px 0;
+    background-color: #1f1f1f;
+}
+.about-us .cont{
+    display: flex;
+    justify-content: space-between;
+}
+.about-us .info{
+    width: 570px;
+}
+.about-us .info h4{
+    font-family: 'GB';
+    font-size: 30px;
+}
+.about-us .info .description{
+    margin-top: 30px;
+}
+.about-us .stat{
+    display: grid;
+    grid-template-columns: 200px 270px;
+    gap: 26px 30px;
+    margin-top: 50px;
+}
+.about-us .stat h3{
+    background-image: linear-gradient(to right, #0253d6, #6eaffc);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.about-us .stat p{
+    color: #f0f0f0;
+    font-family: 'GR';
+    font-size: 16px;
+}
+
+
+.subscribe{
+    padding: 100px 0;
+}
+.subscribe .description{
+    width: 48%;
+    margin: 30px 0 50px 0;
+}
+.subscribe form{
+    width: 40%;
+}
+.subscribe input{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    background: none;
+    outline: none;
+    border: 1px solid #565656;
+    padding: 0 12px;
+    color: #f0f0f0;
+    font-family: 'GR';
+    font-size: 16px;
+}
+.subscribe .item p{
+    margin: 24px 0 12px 0;
+}
+.subscribe form{
+    font-family: 'GR';
+    font-size: 16px;
+    color: #dedede;
+}
+.subscribe form p:nth-child(4){
+    margin: 28px 0 16px 0;
+}
+.subscribe .radio-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe .radio-row input, #check1{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.subscribe .radio-row label{
+    margin-left: -18px;
+    cursor: pointer;
+}
+.subscribe .check-row{
+    display: flex;
+    align-items: center;
+    margin: 28px 0 40px 0;
+}
+.subscribe .check-row label{
+    margin-left: 6px;
+    cursor: pointer;
+}
+.subscribe button{
+    width: 220px;
+    height: 48px;
+    background: linear-gradient(to right, #0253d6, #4465f7, #6eaffc);
+    font-family: 'GDB';
+    font-size: 14px;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+}
+.subscribe button:hover{
+    background: #f0f0f0;
+}
+.subscribe button:hover p{
+    background-image: linear-gradient(to right, #0253d6, #4465f7, #6eaffc);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.subscribe .mid{
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe .cards{
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 160px 160px;
+    gap: 30px;
+    margin-top: 54px;
+}
+.subscribe .card{
+    background: linear-gradient(to right, #111d31, #222b37);
+    border-radius: 4px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.subscribe .card p{
+    color: #f0f0f0;
+    font-family: 'GR';
+    font-size: 16px;
+}
+.subscribe .card h4{
+    font-family: 'GB';
+    font-size: 30px;
+    color: #6fb1fc;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #dedede;
+    background-color: #1f1f1f;
+    padding: 34px 0;
+}
+footer .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'GR';
+    font-size: 12px;
+}
+footer .license{
+    display: flex;
+}
+footer .license a{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+footer .icons-row a:nth-child(2){
+    margin: 0 20px;
+}
+
+
+@media (max-width: 480px) {
+
+    header{
+        width: 460px;
+    }
+    header p{
+        margin: 0 8px 0 0;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    header nav a:nth-child(2){
+        margin-top: 12px;
+        border-top: 1px solid #dedede;;
+        padding-top: 8px;
+    }
+    header nav a{
+        margin: 8px 0;
+    }
+    header .icons-url{
+        flex-direction: column;
+        justify-content: start;
+        width: 34%;
+    }
+    header .icons-url a{
+        flex-direction: row-reverse;
+    }
+    header .icons-url a:nth-child(2){
+        margin: 16px 0;
+    }
+
+
+    .box{
+        width: 460px;
+    }
+
+
+    .welcome-preview{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-position: center;
+        padding-bottom: 20px;
+    }
+    .welcome-preview .info{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .welcome-preview .but-row{
+    }
+
+
+    .recommendations{
+        margin-top: 60px;
+    }
+    .recommendations h3{
+        text-align: center;
+    }
+    .recommendations h5{
+        margin: 6px 0;
+    }
+    .recommendations .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .recommendations .cards a{
+        margin: 20px 0;
+    }
+
+
+    .space{
+        background-position: right;
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgb(50, 50, 50)), url(./img/6.jpg);
+        margin-top: 60px;
+    }
+    .space .info{
+        margin: 0;
+    }
+
+
+    .insomnia{
+        flex-direction: column;
+    }
+    .insomnia .left-side {width: 100%;}
+    .insomnia .buttons{
+        margin: 30px 0 20px 0;
+    }
+    .insomnia .gallery{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .insomnia .gallery img{
+        width: 100%;
+    }
+    .gallery .collage{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .gallery .collage img, .gallery .collage img:nth-child(3), .gallery .collage img:nth-child(4){
+        margin: 10px 0;
+    }
+
+
+    .about-us{
+        margin-top: 80px;
+        padding: 60px 0;
+    }
+
+    .about-us .cont{
+        flex-direction: column;
+    }
+    .about-us .info{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .about-us .stat{
+        grid-template-columns: 180px 190px;
+        justify-content: space-around;
+    }
+
+
+    .subscribe{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe .title{
+        text-align: center;
+    }
+    .subscribe .description{
+        text-align: center;
+        width: 80%;
+        margin: 30px 0;
+    }
+    .subscribe .mid{
+        flex-direction: column;
+    }
+    .subscribe .cards{
+        justify-content: center;
+        grid-template-columns: 40% 40%;
+    }
+    .subscribe form{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe .item{
+        width: 100%;
+    }
+    .subscribe .cards{
+        order: -1;
+        margin-top: 20px;
+    }
+    .subscribe form p:nth-child(4){
+        margin: 20px 0;
+    }
+    .subscribe .radio-row{
+        width: 100%;
+    }
+    .subscribe .radio-row label{
+        margin: 0;
+    }
+    .subscribe .check-row{
+        margin: 20px 0 30px 0;
+    }
+
+
+    footer .cont{
+        flex-direction: column;
+    }
+    footer .icons-row{
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    header, .box{
+        width: 400px;
+    }
+    header .icons-url {
+        width: 38%;
+    }
+
+    .welcome-preview .info{
+        width: 90%;
+    }
+    .welcome-preview .but-row{
+        flex-wrap: wrap;
+        width: 360px;
+    }
+    .welcome-preview .bookmark{
+        margin-top: 20px;
+    }
+
+    .space{
+        padding: 80px 0;
+    }
+    .space .info{
+        width: 380px;
+    }
+    .space .info h2{
+        font-size: 40px;
+    }
+
+    .insomnia .gallery, .insomnia .left-side {width: 100%;}
+
+    .but-row{
+        width: 400px;
+    }
+    .bookmark{
+        height: 48px;
+    }
+    .url-but{
+        width: 200px;
+    }
+}
